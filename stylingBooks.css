@@ -1,0 +1,161 @@
+body {
+    background: url("imatges/wood1.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+
+.loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url("imatges/Preloader_3.gif") 50% 50% no-repeat rgb(249, 249, 249);
+    opacity: .9;
+}
+
+.logo {
+    display: flex;
+    border: 2px solid black;
+    background-image: url("imatges/book-piles.jpg");
+    /*    background-image: url("imatges/open-book-pile.jpg");*/
+    background-size: 100%;
+    height: 250px;
+    border-radius: 10px;
+
+}
+
+#imageLogo {
+    width: 220px;
+    height: 220px;
+    margin: 15px;
+
+}
+
+
+#logoImage {
+    background-color: rgba(179, 179, 179, 0.3);
+    border-radius: 10px;
+}
+
+.titleText {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(179, 179, 179, 0.3);
+    border-radius: 10px;
+}
+
+#nameLogo {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 60px;
+
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#searching {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+
+}
+
+#searching:focus {
+    border: 2px solid black;
+}
+
+.flip-container {
+    perspective: 1000;
+
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+
+}
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 427px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: #f8f8f8;
+    background-image: url("imatges/open-book-pile.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 1px solid black;
+    color: white;
+}
+
+
+.frontCover {
+    width: 320px;
+    height: 427px;
+    border: 1px solid black;
+}
+
+
+#library {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+
+}
+
+.flip-container {
+    margin: 10px;
+
+}
+
+
+.backTitle {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+
+.backDescrip {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#moreInfo {
+    margin-left: 115px;
+}
